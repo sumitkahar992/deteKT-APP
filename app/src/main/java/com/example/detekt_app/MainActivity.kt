@@ -10,14 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.detekt_app.ui.theme.DeteKTAPPTheme
+import com.example.detekt_app.ui.theme.DeteKTAPP
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            DeteKTAPPTheme {
-                // A surface container using the 'background' color from the theme
+            DeteKTAPP {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -38,7 +37,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    DeteKTAPPTheme {
+    DeteKTAPP {
         Greeting("Android")
     }
 }
