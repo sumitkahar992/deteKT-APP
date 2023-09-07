@@ -13,9 +13,11 @@ jobs:
   detekt:
     runs-on: ubuntu-latest
 
+
     steps:
       - name: Checkout code
         uses: actions/Checkout@v3
+
 
       - name: Setup JDK
         uses: actions/setup-java@v3
