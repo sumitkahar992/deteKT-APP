@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
-                ) { Greeting("deteKT workflowsss") }
+                ) { Greeting("deteKT After 1 Month") }
             }
         }
     }
