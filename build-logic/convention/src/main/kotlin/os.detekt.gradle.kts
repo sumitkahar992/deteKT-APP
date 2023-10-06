@@ -7,6 +7,7 @@ val libs: VersionCatalog = extensions.getByType<VersionCatalogsExtension>().name
 apply<DetektPlugin>()
 
 configure<DetektExtension> {
+//    allRules = true
     source.setFrom(projectDir)
     config.setFrom("$rootDir/config/detekt/detekt.yml")
     baseline = file("$rootDir/config/detekt/baseline.yml")

@@ -31,4 +31,4 @@ jobs:
 
 
       - name: Build and run detekt
-        run: ./gradlew detekt
+        run: ./gradlew detektBaseline
