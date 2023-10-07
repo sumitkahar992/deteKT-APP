@@ -7,7 +7,7 @@ val libs: VersionCatalog = extensions.getByType<VersionCatalogsExtension>().name
 apply<DetektPlugin>()
 
 configure<DetektExtension> {
-//    allRules = true
+    allRules = true
     source.setFrom(projectDir)
     config.setFrom("$rootDir/config/detekt/detekt.yml")
     baseline = file("$rootDir/config/detekt/baseline.yml")
@@ -52,8 +52,6 @@ tasks.withType<Detekt> {
     jvmTarget = "1.8"
 }
 
-
-
 dependencies {
     add("detektPlugins", libs.findLibrary("detekt.ruleset.compiler").get())
     add("detektPlugins", libs.findLibrary("detekt.ruleset.ktlint").get())
@@ -75,7 +73,5 @@ dependencies {
     testImplementation("org.assertj:assertj-core:3.19.0")
     testImplementation("junit:junit:4.13.2")
 
-    */
-
-
+     */
 }

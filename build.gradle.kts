@@ -16,4 +16,4 @@ plugins {
     id("os.detekt")
 }
 
-//apply(from = File("gradle/projectDependencyGraph.gradle"))
+// apply(from = File("gradle/projectDependencyGraph.gradle"))

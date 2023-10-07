@@ -63,6 +63,5 @@ gradlePlugin {
             id = "os.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
         }
-
     }
 }

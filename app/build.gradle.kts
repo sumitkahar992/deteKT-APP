@@ -14,12 +14,9 @@ android {
         versionCode = 100
         versionName = "0.0.1"
     }
-
 }
 
 dependencies {
-
-
 
     implementation(projects.feature.home)
 
@@ -43,5 +40,4 @@ dependencies {
     implementation(libs.accompanist.systemuicontroller)
 
     implementation(libs.coil.kt)
-
 }
